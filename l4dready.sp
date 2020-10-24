@@ -1868,7 +1868,7 @@ public int GetAnyClient()
 void DebugPrintToAll(const char[] format, any ...)
 {
 #if READY_DEBUG	|| READY_DEBUG_LOG
-	decl String:buffer[192];
+	char buffer[192];
 	
 	VFormat(buffer, sizeof(buffer), format, 2);
 	
